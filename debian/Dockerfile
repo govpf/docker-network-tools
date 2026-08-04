@@ -1,5 +1,8 @@
 FROM govpf/debian:trixie
 
+LABEL govpf.fromimage="govpf/debian:trixie"
+LABEL govpf.category="utility"
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         bash \
